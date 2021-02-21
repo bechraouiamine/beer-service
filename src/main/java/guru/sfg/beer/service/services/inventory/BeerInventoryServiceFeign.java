@@ -16,14 +16,14 @@ import java.util.UUID;
  */
 @Slf4j
 @RequiredArgsConstructor
-@Profile("local-discovery")
+@Profile("!local-discovery")
 @Service
 public class BeerInventoryServiceFeign implements BeerInventoryService {
 
     private final InventoryServiceFeignClient inventoryServiceFeignClient;
     
     @Override
-    public Integer getOnhandInventory(UUID beerId) {
+    public Integer getOnHandInventory(UUID beerId) {
         log.debug("Calling inventory service for beerId : " + beerId);
 
         ResponseEntity<List<BeerInventoryDto>> responseEntity = inventoryServiceFeignClient.getOnHandInventory(beerId);

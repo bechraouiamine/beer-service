@@ -28,7 +28,7 @@ public class BrewingService {
         Iterable<Beer> beers = beerRepository.findAll();
 
         beers.forEach(beer -> {
-            Integer beerInventory = beerInventoryService.getOnhandInventory(beer.getId());
+            Integer beerInventory = beerInventoryService.getOnHandInventory(beer.getId());
 
             log.debug("Min on hand is : " + beer.getMinOnHand());
             log.debug("Inventory is : " + beerInventory);
