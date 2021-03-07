@@ -1,14 +1,16 @@
-package guru.springframework.msscbeerservice.web.controller;
+package guru.sfg.beer.service.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import guru.sfg.beer.brewery.model.BeerDto;
 import guru.sfg.beer.brewery.model.BeerStyleEnum;
+import guru.sfg.beer.service.MsscBeerServiceApplication;
 import guru.sfg.beer.service.bootstrap.BeerLoader;
 import guru.sfg.beer.service.services.BeerService;
 import guru.sfg.beer.service.web.controller.BeerController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;

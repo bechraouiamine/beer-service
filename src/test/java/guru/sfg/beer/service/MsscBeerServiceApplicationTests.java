@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerservice;
+package guru.sfg.beer.service;
 
 
 import org.junit.jupiter.api.Test;

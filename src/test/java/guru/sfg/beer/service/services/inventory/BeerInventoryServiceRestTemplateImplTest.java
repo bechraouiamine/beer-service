@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerservice.services.inventory;
+package guru.sfg.beer.service.services.inventory;
 
 import guru.sfg.beer.service.services.inventory.BeerInventoryService;
 import org.junit.jupiter.api.BeforeEach;
